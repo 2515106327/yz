@@ -1,0 +1,120 @@
+#slides {
+    display: none;
+    position:relative;
+    
+}
+.slidesjs-container{
+	height: 384px !important;
+}
+.slidesjs-control{
+	height: 384px !important;
+}
+#slides img{
+    height: 384px;
+}
+#slides .slidesjs-navigation {
+    margin-top:3px;
+}
+
+a.slidesjs-next,
+a.slidesjs-previous,
+a.slidesjs-play,
+a.slidesjs-stop {
+    background-image: url("../img/shouye/focus_btn.png");
+    background-repeat: no-repeat;
+    display:block;
+    width:50px;
+    height:75px;
+    overflow: hidden;
+    text-indent: -9999px;
+    float: left;
+    margin-right:5px;
+}
+
+a.slidesjs-next {
+    margin-right:10px;
+    background-position: -34px -74px;
+}
+
+a:hover.slidesjs-next {
+    background-position: -34px 1px;
+}
+
+a.slidesjs-previous {
+    background-position: 0 -74px;
+}
+
+
+a:hover.slidesjs-previous {
+    background-position: 0 1px;
+}
+
+
+#slides .slidesjs-previous {
+    margin-right: 5px;
+    float: left;
+    position: absolute;
+    left: 20px;
+    top: 150px;
+    z-index: 10;
+}
+
+#slides .slidesjs-next {
+    margin-right: 5px;
+    float: left;
+    position: absolute;
+    right: 20px;
+    top: 150px;
+    z-index: 10;
+}
+
+
+.slidesjs-pagination {
+    margin: 6px 0 0;
+    float: left;
+    list-style: none;
+    position: absolute;
+    z-index:10;
+    left: 184px;
+    bottom:20px;
+}
+
+.slidesjs-pagination li {
+    float: left;
+    margin: 0 1px;
+    position: relative;
+    margin:0 8px 0 1px;
+}
+
+.slidesjs-pagination li a {
+    display: block;
+    width: 28px;
+    height:0;
+    padding-top: 5px;
+    background:#ffffff;
+    float: left;
+    overflow: hidden;
+}
+
+.slidesjs-pagination li a.active,
+.slidesjs-pagination li a:hover.active {
+    background:#ffcc2d;
+}
+
+.slidesjs-pagination li a:hover {
+    background:#fff;
+}
+
+#slides a:link,
+#slides a:visited {
+    color: #333
+}
+
+#slides a:hover,
+#slides a:active {
+    color: #9e2020
+}
+
+.navbar {
+    overflow: hidden
+}

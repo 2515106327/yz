@@ -1,17 +1,12 @@
-package ${package.Controller}import com.baomidou.mybatisplus.plugins.Page;
-import org.edu.cdtu.yz.query.PageQuery;
-import org.edu.cdtu.yz.util.AjaxResult;
-import org.edu.cdtu.yz.util.PageList;
+package ${package.Controller};
+import com.baomidou.mybatisplus.plugins.Page;
+import com.coal.cn.query.PageQuery;
+import com.coal.cn.util.AjaxResult;
+import com.coal.cn.util.PageList;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
-;
-${package.Service}
-.${table.serviceName};
-    ${package.Entity}
-        .${entity};
 
 @RestController
 @RequestMapping("/${table.entityPath}")

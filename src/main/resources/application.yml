@@ -3,9 +3,9 @@ server:
 
 spring:
   datasource:
-    username: guest
-    password: 88888888..
-    url: jdbc:mysql://www.xd999.online:3306/yz?useUnicode=true&characterEncoding=utf8&allowMultiqueries=true&serverTimezone=UTC&useSSL=false
+    username: root
+    password: 123456
+    url: jdbc:mysql://120.79.14.220:3306/yz?useUnicode=true&characterEncoding=utf8&allowMultiqueries=true&serverTimezone=UTC&useSSL=false
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
     #   数据源其他配置
@@ -33,7 +33,7 @@ spring:
 mybatis-plus:
   mapper-locations: classpath:mybatis/mapper/*.xml
   # 需要mybatis取别名bean所在的包
-  type-aliases-package: org.edu.cdtu.yz.bean,org.edu.cdtu.yz.query
+  type-aliases-package: com/coal/cn.bean,com/coal/cn.query
   global-config:
     id-type: 3
   configuration:

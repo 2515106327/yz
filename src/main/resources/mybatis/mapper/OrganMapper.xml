@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.coal.cn.mapper.OrganMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.coal.cn.bean.Organ">
+        <id column="organ_uuid" property="organUuid" />
+        <result column="organ_code" property="organCode" />
+        <result column="organ_name" property="organName" />
+        <result column="organ_type" property="organType" />
+        <result column="in_use" property="inUse" />
+        <result column="parent_uuid" property="parentUuid" />
+        <result column="status" property="status" />
+        <result column="modifierid" property="modifierid" />
+        <result column="modtime" property="modtime" />
+        <result column="description" property="description" />
+        <result column="account_code" property="accountCode" />
+        <result column="shortname" property="shortname" />
+    </resultMap>
+
+</mapper>
