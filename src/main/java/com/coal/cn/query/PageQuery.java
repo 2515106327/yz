@@ -11,22 +11,30 @@ public class PageQuery {
     /**
      * 当前页码（从1开始）
      */
-    private Integer page;
+    private Integer pageNumber;
     /**
      * 每页大小
      */
-    private Integer rows;
+    private Integer pageSize;
 
     public PageQuery() {
     }
 
     public PageQuery(Integer page, Integer rows) {
-        this.page = page;
-        this.rows = rows;
+        this.pageNumber = page;
+        this.pageSize = rows;
     }
 
 
     public Integer getStart() {
-        return (page - 1) * rows;
+        return (pageNumber - 1) * pageSize;
+    }
+
+    public int getPage() {
+        return pageNumber;
+    }
+
+    public int getRows() {
+        return pageSize;
     }
 }

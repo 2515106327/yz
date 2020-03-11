@@ -70,7 +70,7 @@ public class UserController {
     * @param query 查询对象
     * @return PageList 分页对象
     */
-    @RequestMapping(value = "/json",method = RequestMethod.POST)
+    @RequestMapping(value = "/getUsers",method = RequestMethod.GET)
     public PageList<User> json(@RequestBody PageQuery query) {
         Page<User> page = new Page<User>(query.getPage(),query.getRows());
         page = userService.selectPage(page);
