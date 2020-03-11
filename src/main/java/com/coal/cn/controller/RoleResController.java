@@ -6,6 +6,7 @@ import com.coal.cn.service.IRoleResService;
 import com.coal.cn.util.AjaxResult;
 import com.coal.cn.util.PageList;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiModelProperty;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -67,12 +68,11 @@ public class RoleResController {
 
     /**
     * 分页查询数据：
-    * @param query 查询对象
     * @return PageList 分页对象
     */
-    @RequestMapping(value = "/json",method = RequestMethod.POST)
-    public PageList<RoleRes> json(@RequestBody PageQuery query) {
-        Page<RoleRes> page = new Page<RoleRes>(query.getPage(),query.getRows());
+    @RequestMapping(value = "/getRoles{pageSize}{pageNumber}{_}",method = RequestMethod.GET)
+    public PageList<RoleRes> json(@PathVariable("pageSize") int pageSize, @PathVariable("pageNumber") int pageNumber, @PathVariable String _) {
+        Page<RoleRes> page = new Page<RoleRes>(pageSize,pageNumber);
         page = roleResService.selectPage(page);
         return new PageList<RoleRes>(page.getPages(), page.getRecords());
     }

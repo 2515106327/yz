@@ -1,6 +1,7 @@
 package com.coal.cn.controller;
 import com.baomidou.mybatisplus.plugins.Page;
 import com.coal.cn.bean.Role;
+import com.coal.cn.bean.RoleRes;
 import com.coal.cn.query.PageQuery;
 import com.coal.cn.service.IRoleService;
 import com.coal.cn.util.AjaxResult;
@@ -67,13 +68,13 @@ public class RoleController {
 
     /**
     * 分页查询数据：
-    * @param query 查询对象
     * @return PageList 分页对象
     */
-    @RequestMapping(value = "/json",method = RequestMethod.POST)
-    public PageList<Role> json(@RequestBody PageQuery query) {
-        Page<Role> page = new Page<Role>(query.getPage(),query.getRows());
+    @RequestMapping(value = "/getRoles",method = RequestMethod.GET)
+    public PageList<Role> json(@RequestParam("pageSize") int pageSize, @RequestParam("pageNumber") int pageNumber) {
+        Page<Role> page = new Page<Role>(pageNumber,pageSize);
         page = roleService.selectPage(page);
         return new PageList<Role>(page.getPages(), page.getRecords());
     }
+
 }

@@ -1,7 +1,7 @@
 package com.coal.cn.service;
 
-import com.coal.cn.bean.Role;
 import com.baomidou.mybatisplus.service.IService;
+import com.coal.cn.bean.Role;
 
 /**
  * <p>
