@@ -1,0 +1,270 @@
+
+/*--------------------2.新闻栏目CSS--------------------*/
+.theOne/*头条新闻*/{ padding-bottom:20px;}
+.theOne h2{ font-family:"微软雅黑","黑体"; font-size:24px; line-height:35px; font-weight:bold; font-style:normal; text-align:center;}
+.commonArea{ padding-top:10px;}
+.AreaPic{ float:left; width:43%; margin-right:2.2%; overflow:hidden;}
+.rightNews{ float:left; width:53%;}
+.rightNews ul{}
+.rightNews ul li{ line-height:26px; background:url(../img/news/red-icon.gif) no-repeat 1px 10px; text-indent:10px;}
+.rightNews ul li a{ font-size:12px;}
+.rightNews ul li a:hover{ font-size:12px;}
+.rightNews ul li em{ font-size:12px; color:#b1b1b1;}
+.rim03{ border-bottom:1px dotted #dcdcdc;}
+
+.hdNews{ border-bottom:1px dotted #DCDCDC;}
+.hdNews p{ line-height:24px; font-size:12px;}
+.hdNews h2{ font-family:"微软雅黑"; font-size:22px; line-height:33px;}
+.hasPic{ height:101px; padding-top:8px; overflow:hidden;}
+.hasPic .pic{ float:left; height:80px; width:120px; margin-top:6px; overflow:hidden; margin-right:2.7%;}
+.hasPic h2{ padding-top:5px;}
+
+
+
+
+/*--------------------2.1.新闻内容CSS--------------------*/
+.website/*所在位置*/{ line-height:30px; height:30px; border-bottom:1px solid #dddddd;}
+.pagesite/*第几页*/{ text-align:center; line-height:24px; height:24px; margin:10px auto;}
+.newsTex/*内容标题*/{ width:97%; margin:auto;}
+.newsTex h1{ font-size:28px; padding:20px 0; font-family:"微软雅黑","黑体"; text-align:center; line-height:30px;}
+.msgbar{ line-height:30px; text-align:center; color:#999; font-size:12px;}
+.summary/*摘要*/{ border:1px solid #dddddd; background:#f8fbff; padding:8px 2px; width:98%; margin:10px auto; line-height:20px; font-size:12px; color:#727272;}
+.newsCon{ width:100%; line-height:24px;}
+.pagebar{height:30px;line-height:30px; text-align:center;}
+.other{height:60px; text-align:center; border-top:#ccc 1px solid; padding-top:10px;}
+.other ul{float:left; margin-left:10px;}
+.other ul li{height:26px; line-height:26px; text-align:left; width:100%;}
+
+
+
+.LanMu01-1/*标题背景*/{ background-image:url(../img/tuku/title1-1.gif); width:23px; height:30px; float:left;}
+.LanMu01-2{ background-image:url(../img/tuku/title1-2.gif); width:100%; height:30px;}
+.LanMu01-2 a{ font-size:12px;}
+.LanMu01-2 span{ line-height:30px; float:left; font-size:14px; font-weight:bold; color:#2b4099;}
+.LanMu01-2 em{float:right; padding-right:1%; font-size:12px; line-height:28px;}
+.LanMu01-3{ background-image:url(../img/tuku/title1-3.gif); width:10px; height:30px; float:right;}
+
+
+.w270{ float:left; width:270px; margin:auto auto auto 1.020408%;}
+.w980{ width:980px;}
+.w700{ float:left; width:700px;}
+.rim05{ border:1px solid #d8d8d8;}
+
+
+@media screen and (min-width:811px) and (max-width:979px){
+.container{ margin:auto; width:97.5%;}
+#menu{ background-image:url(../img/index/daohanglanBg.jpg); height:35px; width:100%;}
+#topmenu dt{text-align:center; padding:0; float:left; margin:0px; height:20px; line-height:20px; font-weight:bold; width:9.8%%; margin-top:8px; border-right:1px dashed #71b4f1;}
+#topmenu dt .menu_first{padding-left:15px; width:9.8%;}
+
+.w310{ float:left; width:46.268656%;}/* 310px / 670px */
+.w308{ float:left; width:100%;}/* 308px / 670px */
+.w350{ float:left; width:52.2388%; margin:10px auto auto 1.492537%;}/* 350px / 670px */
+.w300{ float:right; width:30.61224%;}/* 300px / 980px */
+.w670{ float:left; width:68.367346%;}/* 670px / 980px */
+
+.w270{ float:left; width:27.55102%; margin:auto auto auto 1.020408%;}/* 270px / 980px */
+.w980{ width:100%;}
+.w700{ float:left; width:71.42857%;}/* 700px / 980px */
+.mt10{ margin-top:10px;}
+
+#efpPicList{ display:none;}
+.figure_mask{ display:none;}
+
+.tvNews ul li{ float:left; margin-left:1%; margin-right:1%; width:30%; margin-bottom:15px;}
+.tvNews ul li img{ width:100%; height:auto;}
+
+.list-tweet p{ font-size:12px; height:68px; line-height:21px; color:#666;}
+}
+
+@media screen and (min-width:551px) and (max-width:810px){
+.container{ margin:auto; width:97.5%;}
+#topmenu dt/*导航栏*/{text-align:center; padding:0; float:left; margin:0px; height:20px; line-height:20px; font-weight:bold; width:19.6%; margin-top:8px; border-right:0.10204% dashed #71b4f1;}
+#topmenu dt .menu_first/*左15*/{padding-left:1.530612%; width:19.6%;}
+#menu{ background-image:url(../img/index/dhl02.gif); height:70px; width:100%;}
+
+.theTopLeft{ display:none;}
+.ecCont{ float:none; padding-top:9px; margin:50px auto auto auto; width:100%;}
+
+.w310{ float:left; width:46.268656%;}/* 310px / 670px */
+.w308{ float:left; width:100%;}/* 308px / 670px */
+.w350{ float:left; width:52.2388%; margin:10px auto auto 1.492537%;}/* 350px / 670px */
+.w300{ float:none; width:100%;}/* 300px / 980px */
+.w670{ float:none; width:100%;}/* 670px / 980px */
+.w270{ float:none; width:100%; margin:auto;}/* 270px / 980px */
+.w980{ width:100%;}
+.w700{ float:none; width:100%;}/* 700px / 980px */
+.mt10{ margin-top:10px;}
+
+.tpListPic/*12/300*/{ margin:3px 4% 0 0; float:left; width:112px;}
+
+#efpPicList{ display:none;}
+.figure_mask{ display:none;}
+
+.silder_intro/*视频焦点影片介绍*/{ display:none;}
+
+.tvNews ul li{ float:left; margin-left:1%; margin-right:1%; width:30%; margin-bottom:15px;}
+.tvNews ul li img{ width:100%; height:auto;}
+
+.cjbdPic ul{ width:100%;}
+.cjbdPic ul li{ float:left; margin-left:2%; margin-right:2%; width:21%;}
+
+.Beauty/*美容资讯*/{ height:auto;}
+.Beauty ul li{ width:31%; float:left; margin:15px 1% 0 1%;}
+.Beauty ul li img{ width:100%;}
+}
+
+
+@media screen and (max-width:980px){
+.slider_box{ width:100%; margin:0 auto; height:270px; overflow:hidden; position:relative;}
+
+.jdt{ width:100%; float:none;}
+.tukuw270/*图库*/{ float:none; width:100%; margin:auto;}
+
+}
+
+@media screen and (min-width:600px) and (max-width:978px){
+.tukuzlm ul li{ float:left; margin:15px 1% 0 1%; width:23%; float:left;}
+.tukuzlm ul li img{ width:100%;}
+}
+
+@media screen and (min-width:401px) and (max-width:599px){
+.tukuzlm ul li{ float:left; margin:15px 1% 0 1%; width:31%; float:left;}
+.tukuzlm ul li img{ width:100%;}
+}
+
+@media screen and (max-width:675px){
+.gnNews/*国内新闻*/{ float:none; width:100%;}
+.gjNews/*国际新闻*/{ float:none; width:100%; margin-left:0;}
+.yqlj/*友情链接*/{ display:none; margin-top:0;}
+
+.tkxtb/*图库小图片*/{ display:none;}
+.tkxtblist{ display:none;}
+}
+
+@media screen and (max-width:550px){
+.container{ width:100%;}
+#topmenu dt/*导航栏*/{text-align:center; padding:0; float:left; margin:0px; height:20px; line-height:20px; font-weight:bold; width:19.6%; margin-top:8px; border-right:0.10204% dashed #71b4f1;}
+#topmenu dt .menu_first/*左15*/{padding-left:1.530612%; width:19.6%;}
+#menu{ background-image:url(../img/index/dhl02.gif); height:70px; width:100%;}
+
+.theTopLeft{ display:none;}
+.searchCon{ display:none;}
+.w310{ float:none; width:100%;}
+.w308{ float:none; width:100%;}
+.w350{ float:none; width:100%; margin:10px auto auto 0px;}
+.w300{ float:none; width:100%;}
+.w670{ float:none; width:100%;}
+.w270{ float:none; width:100%; margin-left:0;}
+.w980{ width:100%;}
+.w700{ float:none; width:100%;}
+.mt10{ margin-top:10px;}
+
+.box li/*155px*/{ width:48.5%; height:110px; margin-left:1.5%; float:left; overflow:hidden; position:relative; margin-top:10px;}
+
+.AreaPic/*新闻栏目图片焦点图*/{ float:none; width:100%; overflow:hidden;}
+.rightNews{ float:left; width:100%;}
+
+.tpListPic/*12/300*/{ margin:3px 4% 0 0; float:left; width:112px;}
+
+.figure_mask{ display:none;}
+.mask_txt{ display:none;}
+
+.downContent3 ul li{ width:48.6%; line-height:24px; margin-left:1.4%; margin-top:5px; float:left;}
+
+.ecCont{ float:none; padding-top:9px; margin:50px auto auto auto; width:100%;}
+
+#efpPicList{ display:none;}
+
+.xiazaiboxLeft/*下载表格左边图片*/{ float:none; width:100%; margin-right:0;}
+.xiazaiboxLeft img{ width:180px; margin:auto;}
+.xiazaiboxRight/*下载表格右边信息*/{ float:none; width:100%;}
+
+.silder_intro/*视频焦点影片介绍*/{ display:none;}
+
+.tvNews ul li{ float:none; margin:auto; width:98%; clear:both;}
+.tvNews ul li img{ width:22.857%; height:auto; float:left; margin-right:2%; margin-bottom:10px;}
+.tvNews ul li p{ width:75%; text-align:left; line-height:20px; margin:0; float:left;}
+
+.hasPic{ height:auto; padding-top:8px;}
+
+.leftAreaContent2/*视频左边*/{ float:none; width:100%; margin-top:8px;}
+.rightAreaContent2/*视频右边*/{ float:none; width:100%; margin-top:8px;}
+
+.zpbgfont/*招聘表格字体大小*/{ font-size:12px;}
+}
+
+@media screen and (max-width:400px){
+.downContent3 ul li{ width:48%; line-height:24px; margin-left:0; margin:5px 1% auto 1%; float:left;}	
+
+.jobTitleBg{ height:48px; width:99%; border:1px solid #e6e6e6; margin:auto; background:#f4f5f7; margin-top:10px;}
+.jobTitleBg h1{ font-size:12px; height:48px; line-height:24px; text-align:center; width:34%; border-right:1px solid #e6e6e6; float:left;}
+.jobTitleBg h2{ font-size:12px; height:48px; line-height:24px; text-align:center; width:34%; border-right:1px solid #e6e6e6; float:left;}
+.jobTitleBg h3{ font-size:12px; height:48px; line-height:24px; text-align:center; width:16%; border-right:1px solid #e6e6e6; float:left;}
+.jobTitleBg h4{ font-size:12px; height:48px; line-height:24px; text-align:center; width:14.7%; float:left;}
+
+.downImg{ float:left; height:48px; width:46px; margin-right:1.5%;}
+.downContent1/*下载左边*/{ width:100%; float:left; margin:8px 0 auto 0;}
+.downContent1 ul li{ width:100%; line-height:24px; float:none; clear:both;}
+.downContent2/*下载右边*/{ width:100%; margin:5px auto; float:left;}
+
+.tukuzlm ul li{ float:left; margin:15px 1% 0 1%; width:48%; float:left;}
+.tukuzlm ul li img{ width:100%;}
+}
+
+
+@media screen and (min-width:401px) and (max-width:549px){
+.downContent1/*下载左边*/{ width:100%; float:none; margin:8px 0 auto 0;}
+.downContent1 ul li{ width:33%; line-height:24px; float:left;}
+.downContent2/*下载右边*/{ width:100%; margin:5px auto; float:none;}	
+}
+
+
+@media screen and (max-width:269px){
+.box li/*155px*/{ width:98%; height:110px; margin:10px auto 0 auto; overflow:hidden; position:relative;}
+
+.Beauty/*美容资讯*/{ height:auto;}
+.Beauty ul li{ width:142px; float:none; margin:15px auto 0 auto;}
+.Beauty ul li img{ width:142px;}
+
+.downContent3 ul li{ width:98%; line-height:24px; margin-left:0; margin:5px auto auto auto; float:none;}
+
+.cjbdPic ul{ width:100%;}
+.cjbdPic ul li{ float:none; margin:auto; width:126px;}
+.cjbdPic ul li img{ width:126px; height:80px;}
+
+.HotAttention/*热点关注*/{ min-height:0; width:100%;}
+.HotAttention ul li{ width:118px; float:none; margin:9px auto 0 auto; display:block;}
+}
+
+@media screen and (min-width:270px) and (max-width:420px){
+.Beauty/*美容资讯*/{ height:auto;}
+.Beauty ul li{ width:48%; float:left; margin:15px 1% 0 1%;}
+.Beauty ul li img{ width:100%;}
+}
+
+@media screen and (min-width:421px) and (max-width:550px){
+.Beauty/*美容资讯*/{ height:auto;}
+.Beauty ul li{ width:31%; float:left; margin:15px 1% 0 1%;}
+.Beauty ul li img{ width:100%;}
+}
+
+@media screen and (min-width:801px) and (max-width:979px){
+.HotAttention/*热点关注*/{ min-height:0; width:100%;}
+.HotAttention ul li{ width:13.66%; float:left; margin:9px 1.5% 0 1.5%;}
+}
+
+@media screen and (min-width:270px) and (max-width:400px){
+.HotAttention/*热点关注*/{ min-height:0; width:100%;}
+.HotAttention ul li{ width:47%; float:left; margin:9px 1.5% 0 1.5%;}
+}
+
+@media screen and (min-width:401px) and (max-width:800px){
+.HotAttention/*热点关注*/{ min-height:0; width:100%;}
+.HotAttention ul li/*宽45.5%*/{ width:30%; float:left; margin:9px 1.5% 0 1.5%;}
+}
+
+
+@media screen and (min-width:200px) and (max-width:950px){
+.silder_con{ height:270px; overflow:hidden; position:relative;}
+}

@@ -1,0 +1,71 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://120.79.14.220:3306/yz?useUnicode=true&characterEncoding=utf8&allowMultiqueries=true&serverTimezone=UTC&useSSL=false
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    #   数据源其他配置
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    #   配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+    filters: stat,wall
+    maxPoolPreparedStatementPerConnectionSize: 20
+    useGlobalDataSourceStat: true
+    connectionProperties: druidDataSource.stat.mergeSql=true;druidDataSource.stat.slowSqlMillis=500
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+
+mybatis-plus:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  # 需要mybatis取别名bean所在的包
+  type-aliases-package: com/coal/cn.bean,com/coal/cn.query
+  global-config:
+    id-type: 3
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+#  # redis配置----------------------------------------------------------------------------------
+#  redis:
+##    host: 服务器ip地址  # 上线环境
+#    host: localhost   # 本地测试
+#    password: root
+#    database: 0
+#    port: 6347
+#    timeout: 5000
+#  messages:
+#    encoding: UTF-8
+#
+logging:
+  file: coal.log
+  level:
+    root: info
+    web: debug
+
+management:
+  endpoint:
+    health:
+      show-details: always
+    shutdown:
+      enabled: true
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include: "*"
+debug: false

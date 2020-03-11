@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.coal.cn.mapper.RRoleOrganMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.coal.cn.bean.RRoleOrgan">
+        <id column="dutyid" property="dutyid" />
+        <result column="name" property="name" />
+        <result column="organ_uuid" property="organUuid" />
+        <result column="role_uuid" property="roleUuid" />
+    </resultMap>
+
+</mapper>
