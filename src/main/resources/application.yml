@@ -52,7 +52,7 @@ mybatis-plus:
 #    encoding: UTF-8
 #
 logging:
-  file: yz.log
+  file: coal.log
   level:
     root: info
     web: debug
